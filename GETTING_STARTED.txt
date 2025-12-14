@@ -1,0 +1,211 @@
+GETTING STARTED IN 5 MINUTES
+=============================
+
+This is a quick start guide to get your Cash Now Philly landing page running locally.
+
+⚡ PREREQUISITES
+===============
+Before you begin, make sure you have:
+- Node.js 18 or higher installed (check with: node -v)
+- A Google account (for Google Sheets)
+- A code editor (VS Code recommended)
+- Terminal/Command Prompt access
+
+📋 STEP-BY-STEP SETUP
+=====================
+
+STEP 1: Install Dependencies (2 minutes)
+-----------------------------------------
+Open terminal in the project folder and run:
+
+npm install
+
+This will install all required packages (Next.js, React, TypeScript, etc.)
+
+
+STEP 2: Setup Google Sheets (3 minutes)
+----------------------------------------
+We need a place to save form submissions:
+
+A. Create a Google Sheet:
+   1. Go to sheets.google.com
+   2. Create a new blank spreadsheet
+   3. Name it "Cash Now Philly Leads"
+   4. Add these headers in row 1:
+      Timestamp | Address | Phone Number | Source | User Agent | IP
+
+B. Get Service Account Credentials:
+   1. Go to console.cloud.google.com
+   2. Create a new project (or use existing)
+   3. Enable "Google Sheets API"
+   4. Go to "Credentials" → "Create Credentials" → "Service Account"
+   5. Create service account and download JSON key
+   
+C. Share Sheet with Service Account:
+   1. Open the JSON key file you downloaded
+   2. Copy the "client_email" value
+   3. Go back to your Google Sheet
+   4. Click "Share" and paste the email
+   5. Give it "Editor" access
+
+D. Get Spreadsheet ID:
+   1. Look at your Google Sheet URL
+   2. Copy the ID between /d/ and /edit
+   Example: docs.google.com/spreadsheets/d/ABC123.../edit
+   The ID is: ABC123...
+
+
+STEP 3: Setup Environment Variables (1 minute)
+-----------------------------------------------
+A. Copy the example file:
+
+Windows:
+copy .env.example .env
+
+Mac/Linux:
+cp .env.example .env
+
+B. Open .env in your code editor and fill in:
+
+GOOGLE_SHEETS_SPREADSHEET_ID=
+   Paste the Spreadsheet ID from Step 2D
+
+GOOGLE_SERVICE_ACCOUNT_EMAIL=
+   From JSON key file, the "client_email" value
+
+GOOGLE_PRIVATE_KEY=
+   From JSON key file, the "private_key" value
+   Important: Keep the quotes and \n characters as-is!
+
+NEXT_PUBLIC_PHONE_NUMBER=8669719529
+   Your phone number (digits only)
+
+NEXT_PUBLIC_PHONE_DISPLAY=(866) 971-9529
+   How you want the phone number displayed
+
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+   For development, use localhost
+   For production, use your real domain
+
+
+STEP 4: Add Basic Assets (1 minute)
+------------------------------------
+Create the assets folder:
+
+mkdir public\assets   (Windows)
+mkdir -p public/assets   (Mac/Linux)
+
+For now, you can use placeholder images or download from the original site.
+See ASSETS_REQUIRED.txt for the complete list.
+
+Required files:
+- public/assets/cashnowphilly-logo.png
+- public/favicon.ico
+
+Other images can be added later - the site will still run without them.
+
+
+STEP 5: Run Development Server (30 seconds)
+--------------------------------------------
+Start the server:
+
+npm run dev
+
+Open your browser and go to:
+http://localhost:3000
+
+You should see your landing page! 🎉
+
+
+✅ TEST THE FORM
+================
+1. Fill out the property address and phone number
+2. Click "Get a Cash Offer"
+3. Check your Google Sheet - you should see a new row!
+
+
+🐛 TROUBLESHOOTING
+==================
+
+"Module not found" error:
+→ Run: npm install
+
+Form doesn't submit:
+→ Check Google Sheets credentials in .env
+→ Make sure service account has access to sheet
+→ Check browser console for error messages
+
+Images not showing:
+→ Verify images are in /public/assets/
+→ Check file names match exactly (case-sensitive)
+
+Port 3000 already in use:
+→ Run: npm run dev -- -p 3001
+   (This uses port 3001 instead)
+
+
+📚 NEXT STEPS
+=============
+
+Now that it's running:
+
+1. Read SETUP_INSTRUCTIONS.txt for detailed configuration
+2. Add all required images (see ASSETS_REQUIRED.txt)
+3. Customize colors and content in components
+4. Test on mobile devices
+5. Set up tracking (GTM, Google Ads)
+6. Build for production: npm run build
+7. Deploy (see DEPLOYMENT.txt)
+
+
+🎯 DEVELOPMENT WORKFLOW
+=======================
+
+Making changes:
+1. Edit files in app/ or components/
+2. Save the file
+3. Browser auto-refreshes with changes
+4. No need to restart server!
+
+Before deploying:
+1. Test form submission
+2. Check all links work
+3. Test on mobile
+4. Run: npm run build
+5. Fix any errors
+6. Run: npm start to test production build
+
+
+💡 TIPS
+=======
+
+- Keep the development server running while you work
+- Changes to components refresh automatically
+- Changes to .env require server restart (Ctrl+C then npm run dev)
+- Use browser DevTools to inspect and debug
+- Check the Network tab to see API requests
+- Console will show any JavaScript errors
+
+
+🆘 NEED HELP?
+=============
+
+Check these files:
+- SETUP_INSTRUCTIONS.txt - Detailed setup guide
+- PROJECT_STRUCTURE.txt - How the code is organized
+- DEPLOYMENT.txt - How to deploy to production
+
+Common commands:
+npm run dev       Start development server
+npm run build     Build for production
+npm start         Run production build
+npm install       Install dependencies
+
+
+🎊 YOU'RE READY!
+================
+
+Your landing page is now running locally. Make changes, test the form, and when ready, follow DEPLOYMENT.txt to publish it to the web.
+
+Happy coding! 🚀
+

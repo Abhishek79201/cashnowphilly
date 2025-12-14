@@ -1,0 +1,10 @@
+# robots.txt for cashnowphilly.com
+
+User-agent: *
+Allow: /
+
+Disallow: /api/
+Disallow: /thank-you/
+
+Sitemap: https://cashnowphilly.com/sitemap.xml
+

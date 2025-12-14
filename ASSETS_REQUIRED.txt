@@ -1,0 +1,121 @@
+REQUIRED ASSETS FOR CASH NOW PHILLY
+====================================
+
+Please place all images in the /public/assets/ folder.
+
+LOGO & BRANDING:
+----------------
+□ cashnowphilly-logo.png
+  - Dimensions: 273x184px
+  - Format: PNG with transparency
+  - Usage: Header logo
+
+HERO SECTION:
+-------------
+□ hero-background.png
+  - Dimensions: 1920x668px minimum
+  - Format: JPG or PNG
+  - Usage: Hero section background
+
+3-STEP PROCESS ICONS:
+---------------------
+□ calendar-icon.png
+  - Dimensions: 109x96px
+  - Format: PNG with transparency
+  - Usage: Schedule consultation step
+
+□ document-icon.png
+  - Dimensions: 83x109px
+  - Format: PNG with transparency
+  - Usage: Get fair offer step
+
+□ money-icon.png
+  - Dimensions: 106x88px
+  - Format: PNG with transparency
+  - Usage: Get paid step
+
+"WE WANT TO HELP" SECTION ICONS:
+---------------------------------
+□ situation-icon.png
+  - Dimensions: 151x150px
+  - Format: PNG with transparency
+  - Usage: For any situation
+
+□ condition-icon.png
+  - Dimensions: 151x150px
+  - Format: PNG with transparency
+  - Usage: In any condition
+
+□ struggles-icon.png
+  - Dimensions: 151x150px
+  - Format: PNG with transparency
+  - Usage: With any struggles
+
+5 REASONS SECTION ICONS:
+-------------------------
+□ no-repairs-icon.png
+  - Dimensions: 92x88px
+  - Format: PNG with transparency
+  - Usage: No repairs needed
+
+□ work-icon.png
+  - Dimensions: 88x79px
+  - Format: PNG with transparency
+  - Usage: We do all the work
+
+□ no-fees-icon.png
+  - Dimensions: 144x72px
+  - Format: PNG with transparency
+  - Usage: No fees
+
+□ close-fast-icon.png
+  - Dimensions: 88x84px
+  - Format: PNG with transparency
+  - Usage: Close fast
+
+□ local-service-icon.png
+  - Dimensions: 100x85px
+  - Format: PNG with transparency
+  - Usage: Local service
+
+SEO & SOCIAL:
+-------------
+□ og-image.jpg
+  - Dimensions: 1200x630px
+  - Format: JPG
+  - Usage: Social media sharing (Facebook, LinkedIn, etc.)
+  - Location: /public/og-image.jpg
+
+□ favicon.ico
+  - Dimensions: 32x32px or 16x16px
+  - Format: ICO
+  - Usage: Browser favicon
+  - Location: /public/favicon.ico
+
+□ apple-touch-icon.png
+  - Dimensions: 180x180px
+  - Format: PNG
+  - Usage: iOS home screen icon
+  - Location: /public/apple-touch-icon.png
+
+NOTES:
+------
+1. All icons should be optimized for web (use tinypng.com or similar)
+2. Maintain transparency where specified
+3. Use descriptive alt text for accessibility
+4. Consider creating @2x versions for retina displays
+5. Total estimated size: < 2MB for all assets
+
+EXTRACTION FROM ORIGINAL HTML:
+-------------------------------
+The original HTML references images from:
+d9hhrg4mnvzow.cloudfront.net/offernow.cashnowphilly.com/step1-l/
+
+You can download these assets from the original site or replace with your own branded assets.
+
+Color scheme to match:
+- Primary Blue: #0F526B
+- Red Accent: #C51317
+- Light Gray: #F3F4F8
+- Dark Gray: #2C3743
+

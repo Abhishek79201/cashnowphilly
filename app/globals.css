@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@300;400;700&display=swap');
+
+@layer base {
+  body {
+    @apply font-roboto text-gray;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-lato font-bold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent text-white font-lato font-bold py-1 px-4 rounded-md transition-colors hover:bg-accent-hover active:bg-accent-active;
+  }
+  
+  .section-container {
+    @apply max-w-[956px] mx-auto px-4;
+  }
+  
+  .input-field {
+    @apply w-full  px-4 py-1 border border-[#bbbbbb] rounded-md text-[18px] bg-white text-black shadow-inner;
+  }
+}
+
