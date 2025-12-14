@@ -19,7 +19,7 @@ export async function POST(request: Request) {
     // Email content
     const mailOptions = {
       from: process.env.SMTP_USER,
-      to: process.env.SMTP_FROM_USER, // Send to yourself
+      to: process.env.SMTP_TO_USER, // Send to yourself
       subject: 'New Property Inquiry',
       html: `
         <h2>New Property Inquiry Received</h2>
